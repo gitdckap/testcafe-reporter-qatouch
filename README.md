@@ -8,20 +8,34 @@ Collaborative Test Case Management tool For Modern QA Teams
 Pushes test results into QA Touch system.
 
 ## Installation
+You can install plugins from npm in two ways:
 
-```shell
-npm i testcafe-reporter-qatouch
+####Locally - If you are going to use plugins within TestCafe installed locally.
+
+Navigate to your project directory and run the following command.
+
+``` shell
+npm install --save-dev testcafe-reporter-qatouch
+```
+
+
+####Globally - If the TestCafe module is installed globally or you are going to use plugins within other projects as well.
+
+Run the npm install command with a -g flag.
+
+``` shell
+npm install -g testcafe-reporter-qatouch
 ```
 
 ## Usage
 Ensure that your QA Touch API is enabled and generate your API keys. See https://doc.qatouch.com/#qa-touch-api
 
-Add .env file to testcafe root folder with following keys:
+Add .env file to testcafe project root folder with the following keys:
 
 ```Javascript
 
 QATOUCH_DOMAIN=your-domain
-QATOUCH_API_TOKEN=your-api-toekn
+QATOUCH_API_TOKEN=your-api-token
 QATOUCH_PROJECT_KEY=Project-Key
 QATOUCH_TESTRUN_ID=Test-Run-Id
 
@@ -75,7 +89,7 @@ testCafe
 **testRunId**: *number* test run Id with which the tests are associated
 
 ## References
-- https://www.npmjs.com/package/wdio-qatouch-reporter
+- https://www.npmjs.com/package/testcafe-reporter-qatouch
 - https://qatouch.com/
 - https://help.qatouch.com/
 - https://doc.qatouch.com/
