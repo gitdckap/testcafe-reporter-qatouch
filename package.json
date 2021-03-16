@@ -1,6 +1,6 @@
 {
   "name": "testcafe-reporter-qatouch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "qatouch TestCafe reporter plugin.",
   "repository": "https://github.com/gitdckap/testcafe-reporter-qatouch",
   "author": {
